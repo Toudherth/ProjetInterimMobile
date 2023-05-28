@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".candidat.view.EmployerlistCandidatActivity">
+
+
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnarrowone"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:elevation="4dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                android:backgroundTint="#ffffff">
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/maintoolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+
+
+                </androidx.appcompat.widget.Toolbar>
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <LinearLayout android:id="@+id/linearRecherche"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_width="match_parent" android:orientation="horizontal">
+
+
+            </LinearLayout>
+
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtnom"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_22pxh"
+                android:layout_marginStart="@dimen/_22pxh"
+                android:layout_marginTop="@dimen/_2pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="Employees"
+                style="@style/txtInterregular20"
+                tools:text="Employees"/>
+
+            <LinearLayout android:id="@+id/linearRowback"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtrecherche"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="240dp"
+                    android:layout_height="75dp"
+                    android:hint="Sreach"
+                    android:textColor="@android:color/white"
+                    app:counterMaxLength="50"
+                    app:endIconMode="clear_text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="240dp"
+                        android:layout_height="50dp"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="50"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <ImageButton
+                    android:id="@+id/searchnormal"
+                    android:layout_width="@dimen/_45pxh"
+                    android:layout_height="@dimen/_45pxh"
+                    android:layout_marginEnd="@dimen/_3pxh"
+                    android:scaleType="fitXY"
+                    android:src="@android:drawable/ic_menu_search"
+                    android:title="bnsearche"
+                    app:backgroundTint="@color/white"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck"
+                    tools:src="@android:drawable/ic_menu_search" />
+
+                <ImageButton
+                    android:id="@+id/searchvocal"
+                    android:layout_width="@dimen/_45pxh"
+                    android:layout_height="@dimen/_45pxh"
+                    android:layout_marginEnd="@dimen/_3pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_baseline_mic_24"
+                    android:title="bnsearche"
+                    android:voiceSearchMode="showVoiceSearchButton|launchRecognizer"
+                    app:backgroundTint="@color/white"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck"
+                    tools:src="@drawable/ic_baseline_mic_24" />
+            </LinearLayout>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:orientation="vertical"
+                tools:context=".MainActivity">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation ="vertical" >
+
+                    <ListView
+                        android:id="@+id/recyclerListlineeight"
+                        android:layout_width="match_parent"
+                        android:layout_height="568dp"
+                        android:layout_marginTop="@dimen/_3pxv"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:itemCount="4" />
+
+                </LinearLayout>
+            </ScrollView>
+
+
+
+
+
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

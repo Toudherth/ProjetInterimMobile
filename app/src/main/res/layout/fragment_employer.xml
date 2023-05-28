@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".candidat.fragments.EmployerFragment">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Placeholder pour le contenu des notifications -->
+
+        <LinearLayout android:id="@+id/linearRowback"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <TextView
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="240dp"
+                android:layout_height="45dp"
+                android:hint="Recherche"
+                android:textSize="20dp"
+                android:text="Employer"
+                android:gravity="center"
+                />
+
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation ="vertical" >
+
+                <ListView
+                    android:id="@+id/recyclerListlineeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="568dp"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:gravity="start"
+                    android:orientation="vertical"
+                    tools:itemCount="4" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

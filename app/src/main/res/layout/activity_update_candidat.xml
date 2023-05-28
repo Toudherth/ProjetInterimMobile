@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".candidat.view.UpdateCandidatActivity">
+
+    <LinearLayout android:id="@+id/linearRowarrowone"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            android:backgroundTint="#ffffff">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/maintoolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <LinearLayout android:id="@+id/owarrowone"
+            android:layout_height="match_parent"
+            android:layout_width="320dp"
+            android:gravity="center"
+            android:orientation="horizontal" style="@style/groupStylewhite_A700">
+
+
+            <LinearLayout android:id="@+id/Rowarrowone"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_A700">
+
+
+                <LinearLayout android:id="@+id/linearback"
+                    android:layout_height="80dp"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtInscription"
+                        style="@style/txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Update" />
+                    <TextView
+                        android:id="@+id/txtCandidat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:ellipsize="end"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Candidate" />
+                </LinearLayout>
+
+
+                <LinearLayout android:id="@+id/arrowone"
+                    android:layout_height="500dp"
+                    android:layout_width="340dp"
+                    android:layout_marginTop="@dimen/_2pxv"
+                    android:layout_gravity="center"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:context=".MainActivity">
+                        <LinearLayout android:id="@+id/wone"
+                            android:layout_height="match_parent"
+                            android:layout_width="300dp"
+                            android:layout_marginTop="@dimen/_108pxv"
+                            android:layout_gravity="center"
+                            android:orientation="vertical" >
+
+
+                            <LinearLayout
+                                android:id="@+id/txtNomlayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="75dp"
+                                android:layout_marginTop="@dimen/_139pxv"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:hint="Name"
+                                    android:inputType="textEmailAddress"
+                                    android:textColor="@android:color/white"
+                                    app:counterMaxLength="50"
+                                    app:endIconMode="clear_text"
+                                    app:helperText="Required*"
+                                    app:helperTextTextColor="@color/red_col"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/txtNom"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:inputType="textEmailAddress"
+                                        android:maxLength="50"
+                                        tools:ignore="TouchTargetSizeCheck" />
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:id="@+id/txtPrenomlayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="75dp"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:hint="Lastname"
+                                    android:inputType="textEmailAddress"
+                                    android:textColor="@android:color/white"
+                                    app:counterMaxLength="50"
+                                    app:endIconMode="clear_text"
+                                    app:helperText="Required*"
+                                    app:helperTextTextColor="@color/red_col"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/txtPrenom"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:inputType="textEmailAddress"
+                                        android:maxLength="50"
+                                        tools:ignore="TouchTargetSizeCheck" />
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/txtNationnalitlayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="75dp"
+                                android:layout_marginTop="@dimen/_1pxv"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:hint="Nationality"
+                                    android:inputType="textEmailAddress"
+                                    android:textColor="@android:color/white"
+                                    app:counterMaxLength="50"
+                                    app:endIconMode="clear_text"
+                                    app:helperText="(Optionnal)"
+                                    app:helperTextTextColor="@color/green_100"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/txtNationnalit"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:inputType="textEmailAddress"
+                                        android:maxLength="50"
+                                        tools:ignore="TouchTargetSizeCheck" />
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/txtLanguagelayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="75dp"
+                                android:layout_marginTop="@dimen/_1pxv"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:hint="Date of birth"
+                                    android:inputType="textEmailAddress"
+                                    android:textColor="@android:color/white"
+                                    app:counterMaxLength="50"
+                                    app:endIconMode="clear_text"
+                                    app:helperText="(Optionnal)"
+                                    app:helperTextTextColor="@color/green_100"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/txtdatenaissance"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:inputType="textEmailAddress"
+                                        android:maxLength="50"
+                                        tools:ignore="TouchTargetSizeCheck" />
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:id="@+id/linearlayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="75dp"
+                                android:layout_marginTop="@dimen/_1pxv"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:hint="Telephone number"
+                                    android:textColor="@android:color/white"
+                                    app:counterMaxLength="50"
+                                    app:endIconMode="clear_text"
+                                    app:helperText="Required*"
+                                    app:helperTextTextColor="@color/red_col"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/txtNumero2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:inputType="phone"
+                                        android:maxLength="50"
+                                        tools:ignore="TouchTargetSizeCheck" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearRginlayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="75dp"
+                                android:layout_marginTop="@dimen/_1pxv"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:hint="Email"
+                                    android:inputType="textEmailAddress"
+                                    android:textColor="@android:color/white"
+                                    app:counterMaxLength="50"
+                                    app:endIconMode="clear_text"
+                                    app:helperText="Required*"
+                                    app:helperTextTextColor="@color/red_col"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/etemail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:inputType="textEmailAddress"
+                                        android:maxLength="50"
+                                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearn"
+                                android:layout_width="match_parent"
+                                android:layout_height="75dp"
+                                android:layout_marginTop="@dimen/_1pxv"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:hint="Password"
+                                    android:inputType="textPassword"
+                                    app:counterMaxLength="50"
+                                    app:endIconMode="password_toggle"
+                                    app:helperText="Required*"
+                                    app:helperTextTextColor="@color/red_col"
+                                    app:layout_constraintBottom_toTopOf="@id/etemail"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/etmdp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="textPassword"
+                                        android:maxLines="1"
+                                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearnverif"
+                                android:layout_width="match_parent"
+                                android:layout_height="75dp"
+                                android:layout_marginTop="@dimen/_1pxv"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:hint="Confirm password"
+                                    android:inputType="textPassword"
+                                    app:counterMaxLength="50"
+                                    app:endIconMode="password_toggle"
+                                    app:helperText="Required*"
+                                    app:helperTextTextColor="@color/red_col"
+                                    app:layout_constraintBottom_toTopOf="@id/etemail"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/etmdpverif"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:imeOptions="actionNext"
+                                        android:inputType="textPassword"
+                                        android:maxLines="1"
+                                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/txtvillelayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="75dp"
+                                android:layout_marginTop="@dimen/_1pxv"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:hint="City"
+                                    android:inputType="textEmailAddress"
+                                    android:textColor="@android:color/white"
+                                    app:counterMaxLength="50"
+                                    app:endIconMode="clear_text"
+                                    app:helperText="(Optionnal)"
+                                    app:helperTextTextColor="@color/green_100"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/txtville"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:inputType="textEmailAddress"
+                                        android:maxLength="50"
+                                        tools:ignore="TouchTargetSizeCheck" />
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="85dp"
+                                android:gravity="top"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="0dp"
+                                    android:layout_marginTop="@dimen/_10pxv"
+                                    android:layout_weight="1"
+                                    android:layout_height="65dp"
+                                    android:hint="Resume"
+                                    android:textColor="@android:color/white"
+                                    app:counterMaxLength="50"
+                                    app:endIconMode="clear_text"
+                                    app:helperText="(Optionnal)"
+                                    app:helperTextTextColor="@color/green_100">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/txtcv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="55dp"
+                                        android:inputType="textEmailAddress"
+                                        android:maxLength="100"
+                                        android:enabled="false"
+                                        tools:ignore="TouchTargetSizeCheck" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/buttonajoutcv"
+                                    style="@style/Widget.MaterialComponents.Button.Icon"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="65dp"
+                                    android:text="add cv"
+                                    android:layout_marginTop="@dimen/_8pxv"
+                                    app:icon="@drawable/ic_baseline_post_add_2"
+                                    app:iconTint="@android:color/black"
+                                    app:iconGravity="textEnd"
+                                    app:iconPadding="8dp"
+                                    app:iconSize="20dp"
+                                    android:textColor="@android:color/black"
+                                    app:backgroundTint="@color/bluegray_100" />
+                            </LinearLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/textInputLayoutComment"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:boxBackgroundColor="@android:color/white"
+                                app:boxBackgroundMode="outline"
+                                app:helperText="(Optionnal)"
+                                app:helperTextTextColor="@color/green_100"
+                                android:hint="Cover letter">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/editTextComment"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:minLines="3"
+                                    android:inputType="textMultiLine" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mp"
+                    android:layout_width="350dp"
+                    android:layout_height="85dp"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_marginStart="@dimen/_2pxh"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/buttonaouter"
+                        style="@style/Widget.MaterialComponents.Button.Icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_18pxh"
+                        android:text="Update"
+                        android:background="@drawable/rauond_cyrcle"
+                        app:icon="@drawable/img_connexion1"
+                        app:iconGravity="textStart"
+                        app:iconPadding="8dp"
+                        app:iconSize="20dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/buttonanuuler"
+                        style="@style/Widget.MaterialComponents.Button.Icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_34pxh"
+                        android:text="Cancel"
+                        android:background="@drawable/rauond_cyrcle"
+                        app:icon="@drawable/ic_baseline_close_24"
+                        app:iconGravity="textEnd"
+                        app:iconPadding="8dp"
+                        app:iconSize="20dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

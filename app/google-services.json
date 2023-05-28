@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "706666332430",
+    "project_id": "interimo2",
+    "storage_bucket": "interimo2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706666332430:android:1fda9f5d9a9727ec71175f",
+        "android_client_info": {
+          "package_name": "com.example.hireme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "706666332430-nkljvnafcljn5sahf20i42hou26nsa61.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmdFHDgJ_5nf75dXtBDzsQCaz0s3dw6vE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "706666332430-nkljvnafcljn5sahf20i42hou26nsa61.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

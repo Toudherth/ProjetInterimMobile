@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".candidat.view.RolesActivity">
+
+    <LinearLayout android:id="@+id/linearColumninscription"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            android:backgroundTint="#ffffff">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/maintoolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtInscription"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_118pxh"
+            android:layout_marginStart="@dimen/_118pxh"
+            android:layout_marginTop="@dimen/_34pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="SIGN IN" style="@style/txt"
+            tools:text="SIGN IN"/>
+        <ImageView android:id="@+id/imageUndrawprofile"
+            android:layout_gravity="end"
+            android:layout_height="@dimen/_187pxh"
+            android:layout_marginEnd="@dimen/_67pxh"
+            android:layout_marginStart="@dimen/_67pxh"
+            android:layout_marginTop="@dimen/_32pxv"
+            android:layout_width="@dimen/_237pxh"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/undraw_profile_image_re_ic2f"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_undrawprofile"/>
+        <TextView
+            android:background="@drawable/my_button"
+            android:ellipsize="end"
+            android:hint="Candidat"
+            android:id="@+id/etcandidat"
+            android:inputType="text"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_67pxh"
+            android:layout_marginStart="@dimen/_67pxh"
+            android:layout_marginTop="@dimen/_48pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_14pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:textSize="18dp"
+            android:paddingStart="@dimen/_17pxh"
+            android:paddingTop="@dimen/_11pxv"
+            android:singleLine="true"
+            android:textColorHint="@color/gray_51"
+            style="@style/etSolidRounded_4"
+            tools:ignore="Autofill"/>
+        <TextView
+            android:background="@drawable/my_button"
+            android:ellipsize="end"
+            android:hint="Employer"
+            android:id="@+id/etemployeur"
+            android:inputType="text"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_67pxh"
+            android:layout_marginStart="@dimen/_67pxh"
+            android:layout_marginTop="@dimen/_26pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_11pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_16pxh"
+            android:textSize="18dp"
+            android:paddingTop="@dimen/_14pxv" android:singleLine="true"
+            android:textColorHint="@color/gray_51"
+            style="@style/etSolidRounded_5" tools:ignore="Autofill"/>
+        <TextView
+            android:background="@drawable/my_button"
+            android:ellipsize="end" android:hint="Company"
+            android:id="@+id/etagence" android:inputType="text"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_67pxh"
+            android:layout_marginStart="@dimen/_67pxh"
+            android:layout_marginTop="@dimen/_26pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_11pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:textSize="18dp"
+            android:paddingStart="@dimen/_13pxh"
+            android:paddingTop="@dimen/_14pxv" android:singleLine="true"
+            android:textColorHint="@color/white_A700"
+            style="@style/etSolidRounded_6" tools:ignore="Autofill"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="Se connecter "
+            android:gravity="end"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_30pxv"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/register_button"
+            app:layout_constraintVertical_bias="0.896" />
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

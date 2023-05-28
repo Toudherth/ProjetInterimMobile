@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/linearColumndeveloppeurweb"
+            android:layout_width="151dp"
+            android:layout_height="115dp"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_weight="1.0"
+            android:background="@color/macolor"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/eveloppeurweb2"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5pxh"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_marginEnd="@dimen/_11pxh"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="86dp"
+                        android:layout_height="match_parent"
+                        android:gravity="start"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="83dp"
+                            android:layout_height="108dp"
+                            android:src="@drawable/find_job" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="263dp"
+                        android:layout_height="105dp"
+                        android:gravity="start"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtagencyname"
+                            style="@style/txtInterbold15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="Agency name"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+                            android:id="@+id/txttel"
+                            style="@style/txtInterregular10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5pxv"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textSize="20px"
+                            android:text="+33 10 12 45 78 96" />
+
+                        <TextView
+                            android:id="@+id/txttext"
+                            style="@style/txtInterregular10"
+                            android:layout_width="match_parent"
+                            android:layout_height="27dp"
+                            android:layout_marginTop="@dimen/_5pxv"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textSize="20px"
+                            android:text="texte" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/butmessage"
+                                style="@style/txtSolidRounded_1"
+                                android:layout_width="100dp"
+                                android:layout_height="30dp"
+                                android:paddingStart="@dimen/_1pxh"
+                                android:paddingTop="@dimen/_2pxv"
+                                android:layout_marginStart="@dimen/_49pxh"
+                                android:background="@drawable/rauond_cyrcle"
+                                android:text="Message"
+                                android:textColor="#FFFFFF"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

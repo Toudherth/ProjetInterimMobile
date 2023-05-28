@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_accept"
+        android:title="Accept" />
+    <item
+        android:id="@+id/menu_refuse"
+        android:title="Refuse" />
+    <item
+        android:id="@+id/menu_contact"
+        android:title="Contact Employer" />
+    <item
+        android:id="@+id/menu_report"
+        android:title="Report a Problem" />
+    <item
+        android:id="@+id/menu_add_to_calendar"
+        android:title="Add to Calendar" />
+</menu>
+

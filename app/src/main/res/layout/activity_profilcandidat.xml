@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".candidat.view.ProfilCandidatActivity">
+    <LinearLayout android:id="@+id/linearone"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            android:backgroundTint="#ffffff">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/maintoolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+          <LinearLayout
+        android:id="@+id/linearColumnundrawpicprof"
+        style="@style/groupStylewhite_A700"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+              android:layout_marginTop="@dimen/_10pxv"
+              tools:layout_editor_absoluteX="-98dp"
+        tools:layout_editor_absoluteY="-190dp">
+
+        <ImageView
+        android:id="@+id/imageprofile"
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+            android:layout_gravity="center"
+        android:src="@drawable/undraw_profile_re"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+              <TextView android:ellipsize="end"
+                  android:id="@+id/txtnom"
+                  android:layout_gravity="bottom|center"
+                  android:layout_height="wrap_content"
+                  android:layout_marginEnd="@dimen/_22pxh"
+                  android:layout_marginStart="@dimen/_22pxh"
+                  android:layout_marginTop="@dimen/_2pxv"
+                  android:layout_width="match_parent"
+                  android:singleLine="true"
+                  android:gravity="center"
+                  android:text="John DUPAN"
+                  style="@style/txtInterregular20" tools:text="John DUPAN"/>
+
+              <View android:background="@color/black_900"
+                  android:id="@+id/lineLineSix"
+                  android:layout_gravity="center"
+                  android:layout_height="@dimen/_2pxv"
+                  android:layout_marginBottom="@dimen/_4pxv" android:layout_width="@dimen/_120pxh"/>
+
+              <TextView
+                  android:id="@+id/txtnationalite"
+                  style="@style/txtInterregular13"
+                  android:layout_width="match_parent"
+                  android:layout_height="17dp"
+                  android:layout_gravity="bottom|center"
+                  android:layout_marginStart="@dimen/_3pxh"
+                  android:layout_marginTop="@dimen/_2pxv"
+                  android:layout_marginEnd="@dimen/_7pxh"
+                  android:ellipsize="end"
+                  android:gravity="center"
+                  android:singleLine="true"
+                  android:text="Nationality" />
+
+              <TextView
+                  android:id="@+id/txtdate"
+                  style="@style/txtInterregular13"
+                  android:layout_width="match_parent"
+                  android:layout_height="17dp"
+                  android:layout_gravity="bottom|center"
+                  android:layout_marginStart="@dimen/_3pxh"
+                  android:layout_marginTop="@dimen/_2pxv"
+                  android:layout_marginEnd="@dimen/_7pxh"
+                  android:ellipsize="end"
+                  android:gravity="center"
+                  android:singleLine="true"
+                  android:text="Birth day : 1999/03/02" />
+
+
+              <LinearLayout android:gravity="start"
+                  android:id="@+id/linearRowaddress"
+                  android:layout_height="wrap_content"
+                  android:layout_marginEnd="@dimen/_20pxh"
+                  android:layout_marginTop="@dimen/_12pxv"
+                  android:layout_marginStart="@dimen/_20pxh"
+                  android:layout_width="match_parent"
+                  android:orientation="horizontal" style="@style/groupStylegray_50cornerRadius">
+                  <FrameLayout android:id="@+id/frameStackaddress"
+                      android:layout_height="@dimen/_81pxv"
+                      android:layout_marginBottom="@dimen/_9pxv"
+                      android:layout_marginStart="@dimen/_19pxh"
+                      android:layout_marginTop="@dimen/_12pxv" android:layout_width="@dimen/_32pxh">
+                      <ImageView android:id="@+id/imageAddress"
+                          android:layout_gravity="bottom|end"
+                          android:layout_height="@dimen/_30pxh"
+                          android:layout_marginStart="@dimen/_10pxh"
+                          android:layout_marginTop="@dimen/_10pxv"
+                          android:layout_width="@dimen/_30pxh"
+                          android:scaleType="fitXY"
+                          android:src="@drawable/img_address"
+                          tools:ignore="ContentDescription" tools:src="@drawable/img_address"/>
+                      <ImageView android:id="@+id/imageRingerVolume"
+                          android:layout_gravity="start"
+                          android:layout_height="@dimen/_30pxh"
+                          android:layout_marginBottom="@dimen/_25pxv"
+                          android:layout_marginEnd="@dimen/_10pxh"
+                          android:layout_marginTop="@dimen/_25pxv"
+                          android:layout_width="@dimen/_30pxh"
+                          android:scaleType="fitXY"
+                          android:src="@drawable/img_ringervolume"
+                          tools:ignore="ContentDescription" tools:src="@drawable/img_ringervolume"/>
+                      <ImageView android:id="@+id/imageGmailLogo"
+                          android:layout_gravity="top|start"
+                          android:layout_height="@dimen/_30pxh"
+                          android:layout_marginBottom="@dimen/_10pxv"
+                          android:layout_marginEnd="@dimen/_10pxh"
+                          android:layout_width="@dimen/_30pxh"
+                          android:scaleType="fitXY"
+                          android:src="@drawable/img_gmaillogo"
+                          tools:ignore="ContentDescription" tools:src="@drawable/img_gmaillogo"/>
+                  </FrameLayout>
+                  <LinearLayout android:gravity="start"
+                      android:id="@+id/linearColumnemail"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="@dimen/_14pxv"
+                      android:layout_marginEnd="@dimen/_36pxh"
+                      android:layout_marginStart="@dimen/_41pxh"
+                      android:layout_marginTop="@dimen/_21pxv"
+                      android:layout_weight="0.82"
+                      android:layout_width="0dp" android:orientation="vertical">
+                      <TextView android:ellipsize="end"
+                          android:id="@+id/txtmail"
+                          android:layout_height="wrap_content"
+                          android:layout_width="match_parent"
+                          android:singleLine="true"
+                          android:text="john.dupant@gmail.com"
+                          style="@style/txtInterregular13"
+                          tools:text="john.dupant@gmail.com"/>
+                      <TextView android:ellipsize="end"
+                          android:id="@+id/txttelephone"
+                          android:layout_height="wrap_content"
+                          android:layout_marginEnd="@dimen/_10pxh"
+                          android:layout_marginTop="@dimen/_8pxv"
+                          android:layout_width="match_parent"
+                          android:singleLine="true"
+                          android:text="00406546776543"
+                          style="@style/txtInterregular13"
+                          tools:text="00406546776543"/>
+                      <TextView android:ellipsize="end"
+                          android:id="@+id/txtville"
+                          android:layout_height="wrap_content"
+                          android:layout_marginEnd="@dimen/_10pxh"
+                          android:layout_marginTop="@dimen/_8pxv"
+                          android:layout_width="match_parent"
+                          android:singleLine="true"
+                          android:text="Montpellier"
+                          style="@style/txtInterregular13"
+                          tools:text="Montpellier"/>
+                  </LinearLayout>
+              </LinearLayout>
+
+
+              <LinearLayout android:gravity="start"
+                  android:id="@+id/linearRowad"
+                  android:layout_height="wrap_content"
+                  android:layout_marginEnd="@dimen/_20pxh"
+                  android:layout_marginTop="@dimen/_12pxv"
+                  android:layout_marginStart="@dimen/_20pxh"
+                  android:layout_width="match_parent"
+                  android:orientation="horizontal" style="@style/groupStylegray_50cornerRadius">
+              <ImageView android:id="@+id/imageResume"
+                android:layout_height="@dimen/_60pxh"
+                android:layout_marginBottom="@dimen/_2pxv"
+                android:layout_marginStart="@dimen/_7pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_width="@dimen/_60pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_resume" />
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumncv"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_4pxh"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_11pxv"
+                android:layout_weight="0.74" android:layout_width="0dp" android:orientation="vertical">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearRowcv"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_8pxh"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtCV"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_width="100dp"
+                        android:singleLine="true"
+                        android:text="CV"
+                        style="@style/txtInterregular14" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearRowweburl"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearColumnweburl"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.88"
+                        android:layout_width="0dp" android:orientation="vertical">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtcv"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="Cv PDF"
+                            style="@style/txtInterregular12"
+                            tools:text="Cv PDF"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtdatecv"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_3pxv"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="Modify"
+                            style="@style/txtInterregular11"
+                            tools:text="Modify"/>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/imageDownloadFromC"
+                        android:layout_height="@dimen/_19pxh"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_width="@dimen/_21pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_downloadfromc"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_downloadfromc"/>
+                </LinearLayout>
+            </LinearLayout>
+              </LinearLayout>
+
+
+
+          </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

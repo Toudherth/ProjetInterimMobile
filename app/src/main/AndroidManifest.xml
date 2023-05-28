@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.SEND_EMAIL" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Interimo"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HireMe">
+        <activity
+            android:name="com.example.myapplication.frontend.Profile.Profile_MyReviews"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.frontend.Profile.Profile_Jobs"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.frontend.subscription.IT20231682_give_feedback"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.frontend.subscription.Subscribe"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.frontend.Profile.Jobs"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.frontend.Profile.Profile_WorkHistory"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.myapplication.frontend.Profile.Profile_JobDetails"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.frontend.Profile.Profile_MyJobs"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.frontend.Job.IT20224370_Workerprofile"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.frontend.Job.IT20224370_IndustrialJobs"
+            android:exported="true" />
+        <!--        <activity-->
+        <!--            android:name=".frontend.it20224370.IT20224370_EditProfile"-->
+        <!--            android:exported="true" />-->
+        <!--        <activity-->
+        <!--            android:name=".frontend.it20224370.It20224370_UpdateRequests" android:parentActivityName=".IT20224370_MyRequests"-->
+        <!--            android:exported="true" />-->
+        <activity
+            android:name="com.example.myapplication.frontend.Job.IT20224370_MyRequests"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.frontend.Profile.Profile_MyRequests"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.frontend.Job.IT20224370_JobRequest"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.frontend.Job.IT20224370_Householdjobs"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.frontend.Job.IT20224370_JobCategories"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.frontend.Employee.Emp_RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.frontend.Main_appli"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.myapplication.frontend.Employee.Emp_LoginActivity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name="com.example.myapplication.frontend.Agence.Agence_RegisterActivity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name="com.example.myapplication.frontend.Agence.Agence_LoginActivity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name="com.example.myapplication.frontend.Agence.DashBoardAgency"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name="com.example.myapplication.frontend.Employee.Emp_AcceptedRequest"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.frontend.Employee.Emp_WorkerRequest"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.frontend.DashBoard"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.frontend.Employee.Emp_Popup_apply_form"
+            android:exported="true"
+            android:theme="@style/Theme.HireMe.popMe" />
+        <activity
+            android:name="com.example.myapplication.frontend.Employee.Emp_CustomerMenu"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.frontend.Employee.Emp_SentRequest"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.frontend.Employee.Emp_FindVacancy"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.frontend.Employee.Emp_LatestVacancy"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.frontend.Employee.Emp_PublishedVacancy"
+            android:exported="true"
+            android:parentActivityName="com.example.myapplication.frontend.Employee.Emp_CustomerMenu" />
+        <activity
+            android:name="com.example.myapplication.frontend.Employee.Emp_AddVacancy"
+            android:exported="true"
+            android:parentActivityName="com.example.myapplication.frontend.Employee.Emp_CustomerMenu" />
+        <activity
+            android:name="com.example.myapplication.frontend.Employee.Emp_JobMenu"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.frontend.Employee.Emp_VacancyMenu"
+            android:exported="true"
+            android:parentActivityName="com.example.myapplication.frontend.DashBoard" />
+        <activity
+            android:name="com.example.myapplication.frontend.MainMenu"
+            android:exported="true"
+            android:label="Dashboard" />
+        <activity
+            android:name="com.example.myapplication.frontend.SplashScreen"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name="com.example.myapplication.frontend.Profile.Profile_workerprofile"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.candidat.view.AccueilCandidatActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"/>
+        <activity
+            android:name="com.example.myapplication.candidat.view.CandidaterActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"
+            tools:ignore="MissingClass"/>
+        <activity
+            android:name="com.example.myapplication.candidat.view.Candidat_LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.candidat.view.GestionCandidatureActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"/>
+        <activity
+            android:name="com.example.myapplication.candidat.view.AgenceProfilActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"
+            tools:ignore="MissingClass"/>
+        <activity
+            android:name="com.example.myapplication.candidat.view.CandidatureAcueilActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"/>
+        <activity
+            android:name="com.example.myapplication.candidat.view.InterfanceCandidatureSpontaneActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"/>
+        <activity
+            android:name="com.example.myapplication.candidat.view.CandidatureSpontaneActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.candidat.view.ClassCandidatActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"/>
+        <activity
+            android:name="com.example.myapplication.candidat.view.CompanysActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"
+            tools:ignore="MissingClass"/>
+        <activity
+            android:name="com.example.myapplication.candidat.view.EmplolisteActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"
+            tools:ignore="MissingClass"/>
+        <activity
+            android:name="com.example.myapplication.candidat.view.EmployerlistCandidatActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"/>
+        <activity
+            android:name="com.example.myapplication.candidat.view.MessangerActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"
+            tools:ignore="MissingClass"/>
+        <activity
+            android:name="com.example.myapplication.candidat.view.NotificationActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"/>
+        <activity
+            android:name="com.example.myapplication.candidat.view.OffreActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"
+            tools:ignore="MissingClass"/>
+        <activity
+            android:name="com.example.myapplication.candidat.view.PostulerActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"
+            tools:ignore="MissingClass"/>
+        <activity
+            android:name="com.example.myapplication.candidat.view.ProfilCandidatActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.candidat.view.RechercheaActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"
+            tools:ignore="MissingClass"/>
+        <activity
+            android:name="com.example.myapplication.candidat.view.RolesActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.candidat.view.SaveoffreActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"
+            tools:ignore="MissingClass"/>
+        <activity
+            android:name="com.example.myapplication.candidat.view.UpdateCandidatActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"
+            tools:ignore="MissingClass"/>
+        <activity
+            android:name="com.example.myapplication.candidat.view.AccepteCandidatureActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"/>
+        <activity
+            android:name="com.example.myapplication.candidat.view.CandidatureAllActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"/>
+        <activity
+            android:name="com.example.myapplication.candidat.view.CandidatureFilterActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"/>
+        <activity
+            android:name="com.example.myapplication.candidat.view.CandidatureRefuserActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linearColumndeveloppeurweb"
+            android:layout_width="151dp"
+            android:layout_height="178dp"
+            android:layout_marginStart="17.58dp"
+            android:layout_marginTop="16.46dp"
+            android:layout_weight="1.0"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/eveloppeurweb2"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5.49dp"
+                    android:layout_marginTop="7.68dp"
+                    android:layout_marginEnd="12.09dp"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="86dp"
+                        android:layout_height="match_parent"
+                        android:gravity="start"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="83dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/undraw_profile_re" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="263dp"
+                        android:layout_height="match_parent"
+                        android:gravity="start"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtagencyname"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="Agency name"
+                            android:textSize="18sp" />
+
+
+
+
+                        <LinearLayout
+                            android:id="@+id/linearRoweurone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12.09dp"
+                            android:layout_marginTop="2.19dp"
+                            android:layout_marginEnd="12.09dp"
+                            android:gravity="start"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageLocalisateurOne"
+                                android:layout_width="13.18dp"
+                                android:layout_height="16.48dp"
+                                android:layout_marginTop="4.39dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_localisateur1" />
+
+                            <TextView
+                                android:id="@+id/txtadresse"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3.3dp"
+                                android:layout_marginTop="1.1dp"
+                                android:layout_marginBottom="1.1dp"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:text="adresse"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearRowrevenusone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5.49dp"
+                            android:layout_marginStart="12.09dp"
+                            android:gravity="start"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageRevenusOne"
+                                android:layout_width="18.68dp"
+                                android:layout_height="18.68dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/baseline_link_24" />
+
+                            <TextView
+                                android:id="@+id/txtlink"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.49"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:text="Link" />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txttel"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5.49dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="+33 10 12 45 78 96" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5.49dp"
+                            android:layout_marginStart="2.2dp"
+                            android:gravity="start"
+                            android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/txtconsulter"
+                            android:layout_width="100dp"
+                            android:layout_height="34dp"
+                            android:layout_gravity="start"
+                            android:background="@drawable/rauond_cyrcle"
+                            android:singleLine="true"
+                            android:text="Consult"
+
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp" />
+
+                            <Button
+                                android:id="@+id/txtmessage"
+                                android:layout_width="100dp"
+                                android:layout_height="34dp"
+                                android:layout_gravity="end"
+                                android:background="@drawable/rauond_cyrcle"
+                                android:singleLine="true"
+                                android:text="Message"
+                                android:layout_marginStart="20.87dp"
+                                android:textColor="#FFFFFF"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
