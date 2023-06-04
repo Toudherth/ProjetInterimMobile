@@ -11,6 +11,7 @@ import androidx.cardview.widget.CardView;
 
 import com.example.myapplication.R;
 import com.example.myapplication.frontend.Employee.Emp_JobMenu;
+import com.example.myapplication.frontend.Employee.Emp_LatestVacancy;
 import com.example.myapplication.frontend.Employee.Emp_VacancyMenu;
 import com.example.myapplication.frontend.Profile.Profile_workerprofile;
 
@@ -31,7 +32,7 @@ public class AccueilCandidatActivity extends AppCompatActivity {
         vacancie.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent().setClass(AccueilCandidatActivity.this, OffreActivity.class);
+                Intent intent = new Intent().setClass(AccueilCandidatActivity.this, Emp_LatestVacancy.class);
                 startActivity(intent);
             }
         });
