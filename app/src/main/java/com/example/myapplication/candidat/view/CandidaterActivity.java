@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.myapplication.R;
@@ -34,7 +35,7 @@ public class CandidaterActivity extends AppCompatActivity {
     Agence agence;
     VacancyServicesImp vacSer = new VacancyServicesImp();
     private StorageReference mStorageRef;
-    private static final int PICK_IMAGE_REQUEST = 1;
+    private static final int PICK_IMAGE_REQUEST = 1,PICK_CV_REQUEST = 2;
     String imageName;
 
     FirebaseAuth.AuthStateListener authStateListener;
@@ -46,7 +47,14 @@ public class CandidaterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_candidater);
-        getSupportActionBar().hide();
+
+        // Obtenez une référence à l'ActionBar
+        ActionBar actionBar = getSupportActionBar();
+
+        if (actionBar != null) {
+            // Masquer l'ActionBar
+            actionBar.hide();
+        }
 
         name = findViewById(R.id.etUserOrganism);
         prenom = findViewById(R.id.etUserLastName);
@@ -69,7 +77,14 @@ public class CandidaterActivity extends AppCompatActivity {
         chooseImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openFileChooser();
+                openImageChooser();
+            }
+        });
+
+        chooseIcv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openCvChooser();
             }
         });
 
@@ -88,25 +103,22 @@ public class CandidaterActivity extends AppCompatActivity {
             }
         });
 
-        // Authentification listener
-        FirebaseAuth auth = FirebaseAuth.getInstance();
-        authStateListener = firebaseAuth -> {
-            FirebaseUser user = firebaseAuth.getCurrentUser();
-            if (user != null) {
-                // Utilisateur connecté
-                //addUserToDatabase(user);
-            } else {
-                // Utilisateur déconnecté
-            }
-        };
+
 
     }
 
-    private void openFileChooser() {
-        Intent i = new Intent();
-        i.setType("image/*");
-        i.setAction(Intent.ACTION_GET_CONTENT);
-        startActivityForResult(i, PICK_IMAGE_REQUEST);
+    private void openImageChooser() {
+        Intent intent = new Intent();
+        intent.setType("image/*");
+        intent.setAction(Intent.ACTION_GET_CONTENT);
+        startActivityForResult(intent, PICK_IMAGE_REQUEST);
+    }
+
+    private void openCvChooser() {
+        Intent intent = new Intent();
+        intent.setType("application/pdf");
+        intent.setAction(Intent.ACTION_GET_CONTENT);
+        startActivityForResult(intent, PICK_CV_REQUEST);
     }
 
     @Override
@@ -120,8 +132,15 @@ public class CandidaterActivity extends AppCompatActivity {
             Picasso.with(this).load(mImageUri).into(imgUpload);
 
         }
+        if (requestCode == PICK_CV_REQUEST && resultCode == RESULT_OK &&
+                data != null && data.getData() != null) {
+            mCvUri = data.getData();
+
+            Picasso.with(this).load(mCvUri).into(icvUpload);
+
+        }
     }
 
-    // Méthode pour ajouter l'utilisateur à la base de données
+
 
 }
